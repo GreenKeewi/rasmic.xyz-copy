@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="w-full h-full bg-[#09090b] text-[#fafafa] px-[35rem] py-[5rem] text-2xl">
+    <main className="w-full h-full bg-[#09090b] text-[#fafafa] md:px-[35rem] px-3 py-[5rem] text-2xl">
       <div className="">
         <p className="text-left flex justify-between font-bold">
           GreenKeewi
