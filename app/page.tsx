@@ -1,9 +1,9 @@
 "use client";
 
 import Resume from "@/components/resume";
+import Time from "@/components/time";
 import { BotMessageSquare, Clock, Github } from "lucide-react";
 import Link from "next/link";
-import Time from "./api/time";
 
 export default function Home() {
   return (
