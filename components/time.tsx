@@ -6,11 +6,7 @@ const Time = () => {
   useEffect(() => {
     const getTime = async () => {
       try {
-        const response = await fetch(
-          "http://worldtimeapi.org/api/timezone/Canada/Eastern"
-        );
-        const { datetime } = await response.json();
-        const time = new Date(datetime).toLocaleTimeString();
+        const time = new Date().toLocaleTimeString();
         setTime(time);
       } catch (error) {
         console.error("Error fetching time:", error);
