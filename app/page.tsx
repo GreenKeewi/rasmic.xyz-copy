@@ -33,7 +33,6 @@ export default function Home() {
           Currently working as a Frontend Engineer
         </p>
         <br />
-
         <Resume />
       </div>
     </main>
