@@ -18,27 +18,29 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={dg.className}>
-        <AnimatedCursor
-          innerSize={8}
-          outerSize={32}
-          color="250, 250, 250"
-          outerAlpha={0.2}
-          innerScale={0.7}
-          outerScale={2}
-          clickables={[
-            "a",
-            'input[type="text"]',
-            'input[type="email"]',
-            'input[type="number"]',
-            'input[type="submit"]',
-            'input[type="image"]',
-            "label[for]",
-            "select",
-            "textarea",
-            "button",
-            ".link",
-          ]}
-        />
+        <div className="md:cursor-none cursor-auto">
+          <AnimatedCursor
+            innerSize={8}
+            outerSize={32}
+            color="250, 250, 250"
+            outerAlpha={0.2}
+            innerScale={0.7}
+            outerScale={2}
+            clickables={[
+              "a",
+              'input[type="text"]',
+              'input[type="email"]',
+              'input[type="number"]',
+              'input[type="submit"]',
+              'input[type="image"]',
+              "label[for]",
+              "select",
+              "textarea",
+              "button",
+              ".link",
+            ]}
+          />
+        </div>
         {children}
       </body>
     </html>
